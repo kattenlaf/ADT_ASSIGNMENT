@@ -1,12 +1,14 @@
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
+import pandas as pd
 
-list_1 = [132, 143, 153, 162, 154, 168, 137, 149, 159, 128, 166]
-list_2 = [52, 59, 67, 73, 64, 74, 54, 61, 65, 46, 72]
-list_3 = [173, 184, 194, 211, 196, 220, 188, 188, 207, 167, 217]
-
+data_set = pd.read_csv('Data_Set.csv')
+list_1 = data_set['X1']
+list_0 = []
+for x in range(len(list_1)):
+    list_0.append(x)
 #SCATTER PLOT
 
-plt.scatter(list_1, list_2, label='MyPlot', color='k')
+plt.scatter(list_0, list_1, label='MyPlot', color='k')
 plt.xlabel('x')
 plt.ylabel('y')
 plt.title('SCATTER PLOT')

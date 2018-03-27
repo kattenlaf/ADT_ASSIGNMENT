@@ -1,9 +1,18 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
 
 # x is the sorting of the values of list one
 
-x = np.sort([132, 143, 153, 162, 154, 168, 137, 149, 159, 128, 166])
+data_set = pd.read_csv('Data_Set.csv')
+
+'''
+THIS WORKS
+for i in data_set['X1']:
+    print(i)
+'''
+
+x = np.sort(data_set['X1'])
 y = np.arange(1, len(x)+1) / len(x)
 
 _ = plt.plot(x, y, marker='.', linestyle='none')
