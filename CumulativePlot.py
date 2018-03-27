@@ -6,12 +6,6 @@ import pandas as pd
 
 data_set = pd.read_csv('Data_Set.csv')
 
-'''
-THIS WORKS
-for i in data_set['X1']:
-    print(i)
-'''
-
 x = np.sort(data_set['X1'])
 y = np.arange(1, len(x)+1) / len(x)
 
