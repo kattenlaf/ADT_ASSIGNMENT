@@ -1,6 +1,9 @@
 import matplotlib.pyplot as plt
+import pandas as pd
 
-list1 = [132, 143, 153, 162, 154, 168, 137, 149, 159, 128, 166]
+data_set = pd.read_csv('Data_Set.csv')
+
+list1 = data_set['X1']
 
 bins = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160]
 
