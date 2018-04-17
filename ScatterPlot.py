@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 data_set = pd.read_csv('Data_Set.csv')
+
 list_X1 = []
 list_X2 = []
 list_X3 = []
@@ -18,6 +19,7 @@ for x in range(len(list_2)):
 
 for x in range(len(list_3)):
     list_X3.append(x)
+
 #SCATTER PLOT
 
 plt.scatter(list_X1, list_1, label='X1 PLOT', color='k')
